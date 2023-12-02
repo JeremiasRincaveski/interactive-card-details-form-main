@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="style.css">
@@ -12,31 +12,57 @@
 </head>
 <body>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+  <div class="card">
+    <div class="card__front">
+      <img class="card__front--img" src="images/card-logo.svg" alt="card logo">
+      <input class="card__front--input" type="number" id="cardNumber" placeholder="0000 0000 0000 0000">
 
-  000
+      <div class="wrapper">
+        <input type="text" id="cardName" placeholder="Jane Appleseed">
+        <input type="text" id="cardDate" placeholder="00/00">
+      </div>
+    </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+    <div class="card__back">
+      <input type="text" id="cardCvc" placeholder="000">
+    </div>
+  </div>
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+  <div class="form">
+    <form>
+      <div class="form__component">
+        <label class="form__componet--label" for="formName">Cardholder Name</label>
+        <input class="form__component--input" type="text" id="formName" placeholder="e.g. Jane Appleseed">
+      </div>
 
-  Exp. Date (MM/YY)
-  MM
-  YY
+      <div class="form__component">
+        <label class="form__componet--label" for="formNumber">Card Number</label>
+        <input class="form__component--input" type="text" id="formNumber" placeholder="e.g. 1234 5678 9123 0000">
+      </div>
 
-  CVC
-  e.g. 123
+      <div class="form__component row">
+        <div class="form__component__date">
+          <label class="form__componet--label" for="formMonth">Exp. Date (MM/YY)</label>
+          <div class="wrapper">
+            <input class="form__component--input" type="text" id="formMonth" placeholder="MM">
+            <input class="form__component--input" type="text" placeholder="YY" id="formYear">  
+          </div>
+        </div>
 
-  Confirm
+        <div class="form__component__cvc">
+          <label class="form__componet--label" for="formCvc">CVC</label>
+          <input class="form__component--input" type="text" id="formCvc" placeholder="e.g. 123">
+        </div>
+      </div>
+    </form>
 
-  <!-- Completed state start -->
+    <div class="form__complete">
+      <img class="form__complete__img" src="images/icon-complete.svg" alt="">
+      <h1 class="form__complete__title">Thank you!</h1>
+      <p class="form__complete__description">We've added your card details</p>
+    </div>
 
-  Thank you!
-  We've added your card details
-  Continue
+    <button class="form__button" id="FormButton" type="submit">Continue</button>  
+  </div>
 </body>
 </html>
