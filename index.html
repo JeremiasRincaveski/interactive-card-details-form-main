@@ -7,7 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="style.css">
-  
+  <link rel="stylesheet" href="styles/card.css">
+
   <title>Frontend Mentor | Interactive card details form</title>
 </head>
 <body>
@@ -15,16 +16,16 @@
   <div class="card">
     <div class="card__front">
       <img class="card__front--img" src="images/card-logo.svg" alt="card logo">
-      <input class="card__front--input" type="number" id="cardNumber" placeholder="0000 0000 0000 0000">
+      <input class="card--input" type="number" id="cardNumber" placeholder="0000 0000 0000 0000">
 
       <div class="wrapper">
-        <input type="text" id="cardName" placeholder="Jane Appleseed">
-        <input type="text" id="cardDate" placeholder="00/00">
+        <input class="card--input" type="text" id="cardName" placeholder="Jane Appleseed">
+        <input class="card--input" type="text" id="cardDate" placeholder="00/00">
       </div>
     </div>
 
     <div class="card__back">
-      <input type="text" id="cardCvc" placeholder="000">
+      <input class="card--input" type="text" id="cardCvc" placeholder="000">
     </div>
   </div>
 
