@@ -1,31 +1,17 @@
+import Card from "./componets/card";
+import Form from "./componets/form";
+
 function App() {
   return (
-    <>
-     0000 0000 0000 0000
-    Jane Appleseed
-    00/00
+    <div>
+      <Card />
 
-    000
-
-    Cardholder Name
-    e.g. Jane Appleseed
-
-    Card Number
-    e.g. 1234 5678 9123 0000
-
-    Exp. Date (MM/YY)
-    MM
-    YY
-
-    CVC
-    e.g. 123
-
-    Confirm
-
-    Thank you!
-    We've added your card details
-    Continue
-    </>
+      <Form />
+      
+      {/* Thank you!
+      We've added your card details
+      Continue */}
+    </div>
   );
 }
 
