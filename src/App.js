@@ -1,13 +1,15 @@
 import Card from "./componets/card";
 import Form from "./componets/form";
+import { MyProvider } from "./context/CardContext";
 
 function App() {
   return (
     <div>
-      <Card />
+      <MyProvider>
+        <Card />
 
-      <Form />
-      
+        <Form />
+      </MyProvider>
       {/* Thank you!
       We've added your card details
       Continue */}
