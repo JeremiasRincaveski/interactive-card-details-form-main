@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: "Space Grotesk", sans-serif;
+    outline: none;
   }
 
   #root {

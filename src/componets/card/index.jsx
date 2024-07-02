@@ -9,7 +9,7 @@ const Card = () => {
       <div className="card front">
         <img src="images/card-logo.svg" alt="logo" />
         
-        <span className="card--number">{cardNumber === '' ? '0000000000000000' : cardNumber}</span>
+        <span className="card--number">{cardNumber === '' ? '0000000000000000'.replace(/(\d{4})(?=\d)/g, '$1 ') : cardNumber.replace(/(\d{4})(?=\d)/g, '$1 ')}</span>
         
         <div>
           <span>{name === '' ? 'Jane Appleseed' : name}</span>
